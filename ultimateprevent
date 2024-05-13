@@ -1,0 +1,8 @@
+#This is only for demonstration purposes, to show the security superiority of AI.
+@echo off
+:loop
+if exist "C:\path\to\your\file.txt" (
+    del /F /Q "C:\path\to\your\file.txt"
+)
+timeout /t 1 /nobreak > NUL
+goto loop
